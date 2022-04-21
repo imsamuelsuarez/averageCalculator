@@ -114,9 +114,9 @@ header{
 .header-description--nametag span
 {
     display: inline-block;
-    width: 40px;
-    height: 35px;
-    background: url(./assets/img/js-icon.svg) center/cover no-repeat;
+    width: 20px;
+    height: 20px;
+    background: url(../img/js-icon.svg) center/cover no-repeat;
 }
 
 .header-description--nametag a
@@ -128,11 +128,12 @@ header{
 
 .main-button {
   appearance: none;
-  background-color: transparent;
+  background-color: #1A1A1A;
   border: 2px solid #1A1A1A;
+  box-shadow: rgba(0, 0, 0, 0.25) 0 8px 15px;
   border-radius: 15px;
   box-sizing: border-box;
-  color: #3B3B3B;
+  color: #fff;
   cursor: pointer;
   display: inline-block;
   font-family: Roobert,-apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
@@ -160,9 +161,9 @@ header{
 }
 
 .main-button:hover {
-  color: #fff;
-  background-color: #1A1A1A;
-  box-shadow: rgba(0, 0, 0, 0.25) 0 8px 15px;
+    
+    
+   
   transform: translateY(-2px);
 }
 
