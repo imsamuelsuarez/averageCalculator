@@ -35,17 +35,15 @@
                         <li>Calculo de Descuentos</li>
                     </ul>
     
-                    <p class="header-description--nametag">Proyectos creados en Javascript <span>i</span>  por <a href="#main">Samuel Suarez</a></p>
+                    <p class="header-description--nametag">Proyecto creado en Javascript <span></span> <br>  por <a href="#main">Samuel Suarez</a></p>
     
-                    <button class="header-description--main-button main-button">Iniciar</button>
+
+
+                    <a class="header-description--main-button main-button" href="#main-calc__container">Iniciar</a>
                 </div>
             </div>
-    
-            <div class="header-hero--container">
-                logo
-            </div>
         </header>
-        <main class="main"> 
+        <main class="main" id="main-calc__container"> 
              <section class="main-section--card">
             <div class="main-select--title-section">
                 <form action="calculos" class="form-calc">
@@ -56,9 +54,7 @@
                     <option value="2" id="btnSquarePerimeter">Perimetro del cuadrado</option>
                     <option value="3" id="btnSquareDiagonal">Diagonal del cuadrado</option>
                     <option value="4" id="btnCircleArea">Area del circulo</option>
-                    <option value="5" id="btnCircleRadio">Radio del circulo</option>
-                    <option value="6" id="btnCircleCircumference">Circunferencia del circulo</option>
-                    <option value="7" id="btnCompoundInterest">Interes compuesto</option>
+                  
                   </select>
             </form>
             </div>
@@ -135,8 +131,8 @@
 
 
                 <div class="card circle-card circle-card--area" id="circle-card--area" data-value="3">
-                    <form action="" class="form--card ">
-                        <div class="card--title-container ">
+                    <form action="" class="form--card">
+                        <div class="card--title-container">
                             <span class="title-container--shape">#4</span>
                             
                             <p class="title-container--result" id="crclAreaInputResult"></p>
@@ -150,48 +146,13 @@
                         </div>
                 </div>
 
-                <div class="card circle-card circle-card--radio" id="circle-card--radio" data-value="4">
-                    <form action="" class="form--card ">
-                        <div class="card--title-container ">
-                            <span class="title-container--shape">#5</span>
-                            
-                            <p class="title-container--result" id="crcl-input-rest"></p>
-                        </div>
-                        <div class="card--body-container">
     
-                            <label for="shapevalue" class="cdbody--label">¿Cuánto mide el diametro de tu circulo en centimetros?</label>
-                            <input type="text" id="shapevalue" class="cdbody--input-value">
-    
-                            <input type="submit" value="Enviar" class="cdbody-container--input-submit">
-                        </div>
-                    </form>
-                </div>
-
-
-                <div class="card circle-card--circumference" id="circle-card--circumference" data-value="5">
-                    <form action="" class="form--card">
-                        <div class="card--title-container ">
-                            <span class="title-container--shape">#6</span>
-                            
-                            <p class="title-container--result"> 65</p>
-                        </div>
-                        <div class="card--body-container">
-    
-                            <label for="shapevalue" class="cdbody--label">¿Cuánto mide el diametro de tu circulo en centimetros?</label>
-                            <input type="text" id="shapevalue" class="cdbody--input-value">
-    
-                            <input type="submit" value="Enviar" class="cdbody-container--input-submit">
-                        </div>
-                    </form>
-                </div>
-                <div class="card compoundInteres-card" id="compoundInteres-card" data-value="6">septima opcion</div>
-                  </div>
             </section>
         </main>
     </section>
    
 
-    <script type="module" src="./index.js"></script>
+    <script src="./index.js"></script>
     <script src="./calc.js"></script>
 </body>
 </html>
