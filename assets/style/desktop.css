@@ -1,0 +1,16 @@
+@media(max-width: 1200px)
+{
+    header
+    {
+        display: grid;
+        grid-template-columns: repeat(10, 1fr);
+        grid-template-rows: repeat(4, 165px)
+
+    }
+
+    .header-info--container
+    {
+        grid-area: 1 / 2 / 5 / 3 ;
+        
+    }
+}
