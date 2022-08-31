@@ -1,0 +1,14 @@
+@media(min-width: 730px)
+{
+    header
+    {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: repeat(5, 130px);
+    }
+
+    .header-info-container
+    {
+        grid-area: 1 / 1 / 1 / 2;
+    }
+}

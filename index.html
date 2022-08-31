@@ -6,7 +6,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./assets/style/index.css">
     <link rel="stylesheet" href="./assets/style/desktop.css">
+    <link rel="stylesheet" href="./assets/style/tablet.css">
+    <link rel="stylesheet" href="./assets/style/cards.css">
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
+
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100;0,200;0,300;0,400;0,600;1,200&display=swap" rel="stylesheet"> 
     <title>Calculadora de Promedios - Samuel Suarez</title>
@@ -44,10 +48,56 @@
         </div>
     </header>
 
-    <main class="#main">
-        <section class="main-portfolio--section"> 
-            <div class="main-portfolio--card">
+    <main class="main">
+        <section class="main-portfolio--section">
+            <div class="main-portfolio--info">
+                <label for="select-list">¿Qué quieres calcular?</label>
+                <select name="calculos" id="select-list" required>
+                    <option value="1">Area de un cuadrado</option>
+                    <option value="2">Perimetro de un cuadrado</option>
+                    <option value="3">Area de un triangulo</option>
+                    <option value="4">Perimetro de un triangulo</option>
+                    <option value="5">quinta opcion</option>
+                    <option value="6">Diametro del circulo</option>
+                    <option value="7">Diametro de un circulo</option>
+                    <option value="8">Circunferencia de un circulo</option>
+                    <option value="9">Interes compuesto</option>
+                </select>
+    
+                <button class="main-portfolio--button" id="portfolio-btn">Seleccionar</button>
+            </div>
+               
+            
+            
 
+            <div class="main-card--container">
+               <form action="" class="card--square-area">
+                   <div class="square-area--info">
+                    <label for="sides">
+                        ¿Cuanto mide un lado de tu cuadrado?
+                    </label>
+                    <input type="text" id="sides" class="square-area--input-text" placeholder="Lado del cuadrado en centimetros">
+                    
+                        <div class="square-area--button-section">
+                            <button class="primary-button--square-sides"><span></span></button>
+                            <button class="secondary-button--square-sides"><span></span></button>
+                        
+                        </div>
+                       
+                    
+ 
+                    <p class="card--result"></p>
+                   </div>
+                  
+               </form>
+
+                <div class="card second-card">
+                    
+                </div>
+
+                <div class="card third-card">
+                    
+                </div>
             </div>
         </section>
     </main>

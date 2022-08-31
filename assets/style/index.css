@@ -2,7 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Roboto Mono', monospace;
+    font-family: 'Roboto Mono', monospace, sans-serif;
 }
 
 html
@@ -18,7 +18,7 @@ html
     grid-template-rows: repeat(6, 1fr);
     grid-template-columns: 1fr;
     width: 90%;
-    max-width: 530px;
+    max-width: 330px;
     height: 650px;
     margin: 0 auto;
    
@@ -159,10 +159,48 @@ html
 main
 {
     width: 100%;
-    height: 1000px;
+    height: auto;
     background-color: #1A1A1A;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
+.main-portfolio--section
+{
+    width: 100%;
+    height: auto;
+    min-height: 600px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.main-portfolio--info
+{
+    width: 90%;
+    height: 100px;
+    display: grid;
+
+}
+
+.main-card--container
+{
+    width: 100%;
+    height:auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.card 
+{
+    display: none;
+}
 
 
 
