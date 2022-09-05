@@ -5,6 +5,15 @@
     font-family: 'Roboto Mono', monospace, sans-serif;
 }
 
+:root
+{
+    --red-ruby:#BF263C;
+    --blue: #4097AA;
+    --strong-gray: #1A1A1A;
+    --white: #FFFFFF;
+
+}
+
 html
 {
     font-size: 62.5%;
@@ -160,51 +169,77 @@ main
 {
     width: 100%;
     height: auto;
-    background-color: #1A1A1A;
+    background-color: var(--strong-gray);
     display: flex;
-    flex-direction: column;
     justify-content: center;
     align-items: center;
 }
 
-.main-portfolio--section
+.main-section--card
 {
-    width: 100%;
-    height: auto;
+    width: inherit;
     min-height: 600px;
+    height: auto;
     display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    align-items: center;
-}
-
-.main-portfolio--info
-{
-    width: 90%;
-    height: 100px;
-    display: grid;
-
-}
-
-.main-card--container
-{
-    width: 100%;
-    height:auto;
-    display: flex;
-    flex-direction: column;
     justify-content: center;
     align-items: center;
+    flex-direction: column;
 }
 
-
-.card 
+.main-select--title-section
 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.main-select--title-section .form-calc
+{
+    margin: 48px auto;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    font-size: 24px;
+    color: var(--white)
+
+}
+.main-select--title-section .form-calc .select 
+{
+    border: none;
+    font-size: 16px;
+    padding: 8px;
+    width: 100%;
+    max-width: 259px;
+    border-radius: 8px;
+    margin: 0 auto;
+    margin-top: 20px;
+    cursor: pointer;
+    
+}
+
+.main-select--card-wrapper
+{
+    width: 100%;
+    min-height: 500px;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    
+}
+
+.main-select--card-wrapper .card 
+{
+    background-color: white;
+    height: 500px;
+    max-width: 754px;
+    width: 95%;
+    margin: 40px 0;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     display: none;
 }
-
-
-
-
-
-
-

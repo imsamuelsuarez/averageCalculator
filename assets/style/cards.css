@@ -1,9 +1,4 @@
-:root
-{
-    --red-ruby:#BF263C;
-    --blue: #4097AA;
 
-}
 
 /* Tarjeta del calculo del area del cuadrado */
 
@@ -16,10 +11,10 @@
     width: 90%;
     height: 490px;
     margin: 24px auto;
-    border-radius: 17px;
-    background: #1A1A1A;
-    box-shadow:  -30px 30px 60px #0c0c0c,
-                30px -30px 60px #282828;
+    border-radius: 50px;
+background: #eeeeec;
+box-shadow:  20px 20px 60px #cacac9,
+             -20px -20px 60px #ffffff;
 }
 
 .square-area--info
