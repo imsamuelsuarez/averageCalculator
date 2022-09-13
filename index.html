@@ -12,7 +12,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
 
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100;0,200;0,300;0,400;0,600;1,200&display=swap" rel="stylesheet"> 
+<link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100;0,200;0,300;0,400;0,600;1,200&display=swap" rel="stylesheet">
     <title>Calculadora de Promedios - Samuel Suarez</title>
 </head>
 <body>
@@ -22,8 +22,8 @@
                 <h1 class="header-container--title">Calcula tus  promedios</h1>
 
                 <h4 class="header-container--subtitle">¡Calcula figuras geometricas, promedios matematicos y más!</h2>
-           </div> 
-           
+           </div>
+
 
             <div class="header-container--description">
                 <p class="header-description--title">Utilizando esta herramienta puedes calcular: </p>
@@ -38,9 +38,9 @@
                 <p class="header-description--nametag">Proyectos creados en Javascript <span>i</span>  por <a href="#main">Samuel Suarez</a></p>
 
                 <button class="header-description--main-button main-button">Iniciar</button>
-            </div> 
+            </div>
 
-          
+
         </div>
 
         <div class="header-hero--container">
@@ -54,23 +54,122 @@
                 <form action="calculos" class="form-calc">
                    <label for="calculos" class="form-calc--label">Empieza a calcular ahora</label>
                  <select name="calculos" id="select" class="select" required autofocus>
-                    <option value="0" autofocus>Selecciona un calculo</option> 
-                    <option value="1">Interes compuesto</option>
-                    <option value="2">Geometria</option>
-                    <option value="3">Tercer opcion</option>
+                    <option value="0" autofocus>Selecciona un calculo</option>
+                    <option value="1" id="btnSquareArea">Area del Cuadrado</option>
+                    <option value="2" id="btnSquarePerimeter">Perimetro del cuadrado</option>
+                    <option value="3" id="btnSquareDiagonal">Diagonal del cuadrado</option>
+                    <option value="4" id="btnCircleArea">Area del circulo</option>
+                    <option value="5" id="btnCircleRadio">Radio del circulo</option>
+                    <option value="6" id="btnCircleCircumference">Circunferencia del circulo</option>
+                    <option value="7" id="btnCompoundInterest">Interes compuesto</option>
                   </select>
             </form>
             </div>
+
+            <div class="main-select--card-wrapper" id="mainContainer">
+                <div class="card square-card square-card--area" id="square" data-value="0">
+                <form action="" class="form--card square-card--form">
+                    <div class="card--title-container square-form--title-container">
+                        <span class="title-container--shape title-container--square-shape">#1</span>
+                        
+                        <p class="title-container--result"> 23</p>
+                    </div>
+                    <div class="card--body-container square-form--body-container">
+
+                        <label for="shapevalue" class="
+                        
+                        cdbody--label 
+                        sqbody-container--label
+                        
+                        ">¿Cuánto mide un lado de tu cuadrado en centimetros?</label>
+                        <input type="text" id="shapevalue" class="
+
+                        cdbody--input-value sqbody-container--input-value">
+
+                        <input type="submit" value="Enviar" class="cdbody-container--input-submit sqbody-container--input-submit">
+                    </div>
+                </form>
+             </div>
+
+
+
+
+            
+                <div class="card square-card square-card--perimeter" id="square-card--perimeter" data-value="1"> 
+                    <form action="" class="form--card square-card--form">
+                    <div class="card--title-container square-form--title-container">
+                        <span class="title-container--shape title-container--square-shape">#2</span>
+                        
+                        <p class="title-container--result">12</p>
+                    </div>
+                    <div class="card--body-container square-form--body-container">
+
+                        <label for="shapevalue" class="
+                        
+                        cdbody--label 
+                        sqbody-container--label
+                        
+                        ">¿Cuánto mide la base de tu cuadrado en centimetros?</label>
+                        <input type="text" id="shapevalue" class="
+
+                        cdbody--input-value sqbody-container--input-value">
+
+                        <label for="shapeSndValue" class="cdbody--label">¿Cuánto mide el area de tu cuadrado?</label>
+
+                        <input type="text" class="cdbody--input-value">
+
+                        <input type="submit" value="Enviar" class="cdbody-container--input-submit sqbody-container--input-submit">
+                    </div>
+                </form>  </div>
+
+
+
+
+
+
+
+                <div class="card square-card square-card--diagonal" id="square-card--diagonal" data-value="2">
+
+                    <form action="" class="form--card ">
+                        <div class="card--title-container ">
+                            <span class="title-container--shape">#3</span>
+                            
+                            <p class="title-container--result"> 65</p>
+                        </div>
+                        <div class="card--body-container">
     
-            <div class="main-select--card-wrapper">
-                <div class="card square-card">primera opcion</div>
-                <div class="card square-card">segunda opcion</div>
-                <div class="card square-card">tercera opcion</div>
-                <div class="card square-card">cuarta opcion</div>
-                
+                            <label for="shapevalue" class="cdbody--label">¿Cuánto mide un lado de tu cuadrado en centimetros?</label>
+                            <input type="text" id="shapevalue" class="cdbody--input-value">
+    
+                            <input type="submit" value="Enviar" class="cdbody-container--input-submit">
+                        </div>
+                    </form>
+
+                </div>
+
+
+                <div class="card circle-card circle-card--area" id="circle-card--area" data-value="3">
+                    <form action="" class="form--card ">
+                        <div class="card--title-container ">
+                            <span class="title-container--shape">#4</span>
+                            
+                            <p class="title-container--result">82</p>
+                        </div>
+                        <div class="card--body-container">
+    
+                            <label for="shapevalue" class="cdbody--label">¿Cuánto mide un lado de tu cuadrado en centimetros?</label>
+                            <input type="text" id="shapevalue" class="cdbody--input-value">
+    
+                            <input type="submit" value="Enviar" class="cdbody-container--input-submit">
+                        </div>
+                </div>
+
+                <div class="card circle-card circle-card--radio" id="circle-card--radio" data-value="4"></div>
+                <div class="card circle-card circle-card--circumference" id="circle-card--circumference" data-value="5">sexta opcion</div>
+                <div class="card compoundInteres-card" id="compoundInteres-card" data-value="6">septima opcion</div>
             </div>
         </section>
-        
+
     </main>
     <script src="./index.js"></script>
 </body>

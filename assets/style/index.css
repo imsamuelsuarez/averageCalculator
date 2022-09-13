@@ -11,6 +11,8 @@
     --blue: #4097AA;
     --strong-gray: #1A1A1A;
     --white: #FFFFFF;
+    --black: black;
+    --soft-white: #e0e0e0;
 
 }
 
@@ -169,7 +171,7 @@ main
 {
     width: 100%;
     height: auto;
-    background-color: var(--strong-gray);
+    background-color: var(--soft-white);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -196,12 +198,12 @@ main
 
 .main-select--title-section .form-calc
 {
-    margin: 48px auto;
+    margin-top: 40px;
     display: flex;
     flex-direction: column;
     text-align: center;
     font-size: 24px;
-    color: var(--white)
+    color: var(--black)
 
 }
 .main-select--title-section .form-calc .select 
@@ -242,4 +244,8 @@ main
     justify-content: center;
     align-items: center;
     display: none;
+    border-radius: 40px;
+background: linear-gradient(225deg, #cacaca, #f0f0f0);
+box-shadow:  -35px 35px 70px #848484,
+             35px -35px 70px #ffffff;
 }
