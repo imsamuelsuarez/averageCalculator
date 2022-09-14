@@ -72,7 +72,7 @@
                     <div class="card--title-container square-form--title-container">
                         <span class="title-container--shape title-container--square-shape">#1</span>
                         
-                        <p class="title-container--result"> 23</p>
+                        <p class="title-container--result fst-p--result"> 23</p>
                     </div>
                     <div class="card--body-container square-form--body-container">
 
@@ -82,11 +82,11 @@
                         sqbody-container--label
                         
                         ">¿Cuánto mide un lado de tu cuadrado en centimetros?</label>
-                        <input type="text" id="shapevalue" class="
+                        <input type="text" id="fst-card--input-text" class="
 
                         cdbody--input-value sqbody-container--input-value">
 
-                        <input type="submit" value="Enviar" class="cdbody-container--input-submit sqbody-container--input-submit">
+                        <input type="submit" value="Enviar" id="fst-button--submit"class="cdbody-container--input-submit sqbody-container--input-submit">
                     </div>
                 </form>
              </div>
@@ -157,20 +157,53 @@
                         </div>
                         <div class="card--body-container">
     
-                            <label for="shapevalue" class="cdbody--label">¿Cuánto mide un lado de tu cuadrado en centimetros?</label>
+                            <label for="shapevalue" class="cdbody--label">¿Cuánto mide el radio de tu circulo en centimetros?</label>
                             <input type="text" id="shapevalue" class="cdbody--input-value">
     
                             <input type="submit" value="Enviar" class="cdbody-container--input-submit">
                         </div>
                 </div>
 
-                <div class="card circle-card circle-card--radio" id="circle-card--radio" data-value="4"></div>
-                <div class="card circle-card circle-card--circumference" id="circle-card--circumference" data-value="5">sexta opcion</div>
+                <div class="card circle-card circle-card--radio" id="circle-card--radio" data-value="4">
+                    <form action="" class="form--card ">
+                        <div class="card--title-container ">
+                            <span class="title-container--shape">#5</span>
+                            
+                            <p class="title-container--result"> 65</p>
+                        </div>
+                        <div class="card--body-container">
+    
+                            <label for="shapevalue" class="cdbody--label">¿Cuánto mide el diametro de tu circulo en centimetros?</label>
+                            <input type="text" id="shapevalue" class="cdbody--input-value">
+    
+                            <input type="submit" value="Enviar" class="cdbody-container--input-submit">
+                        </div>
+                    </form>
+                </div>
+
+
+                <div class="card circle-card--circumference" id="circle-card--circumference" data-value="5">
+                    <form action="" class="form--card">
+                        <div class="card--title-container ">
+                            <span class="title-container--shape">#6</span>
+                            
+                            <p class="title-container--result"> 65</p>
+                        </div>
+                        <div class="card--body-container">
+    
+                            <label for="shapevalue" class="cdbody--label">¿Cuánto mide el diametro de tu circulo en centimetros?</label>
+                            <input type="text" id="shapevalue" class="cdbody--input-value">
+    
+                            <input type="submit" value="Enviar" class="cdbody-container--input-submit">
+                        </div>
+                    </form>
+                </div>
                 <div class="card compoundInteres-card" id="compoundInteres-card" data-value="6">septima opcion</div>
-            </div>
+                  </div>
         </section>
 
     </main>
     <script src="./index.js"></script>
+    <script src="./calc.js"></script>
 </body>
 </html>
