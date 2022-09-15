@@ -1,17 +1,47 @@
-const cards = [{
-    name: "squareArea",
-    result: document.getElementsByClassName("fst-p--result"),
-    btn: document.getElementById("fst-button--submit"),
-    inputText: document.getElementById("fst-card--input-text"),
+
+const sqAreaInputResult = document.getElementById("resultSquareArea");
+
+let sqAreaInputText = document.getElementById('squareAreaInputText');
+
+
+const sqAreaBtn = document.getElementById("sqAreaBtn");
+
+const letters = /[a-zA-Z]/
+
+
+
+sqAreaBtn.addEventListener('click', () =>
+{
+    let lado = sqAreaInputText.value;
     
-}]
+
+ if(lado == '')
+ {
+     console.log('tienes que poner un numero');
+     
+ }
+ else if(containsLetters(lado))
+ {
+    console.log("ingresa un valor sin letras");
+ }
+ else
+ {
+     sqAreaInputResult.innerHTML = operaciones.areaCuadrado(lado) + "cm";
+ }
+})
+
+
+
+function containsLetters(str) {
+    return /[a-zA-Z]/.test(str);
+  }
 
 
 let operaciones = {
     areaCuadrado: function(lado)
     {
-        let areaCuadrado = lado * lado;
-        alert(`El area del cuadrado es igual a ${areaCuadrado}cm`);
+        return areaCuadrado = lado * lado;
+        
     },
 
     perimetroCuadrado: function(lado)
