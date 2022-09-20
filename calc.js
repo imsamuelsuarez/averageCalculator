@@ -1,43 +1,44 @@
 
 const sqAreaInputResult = document.getElementById("resultSquareArea");
-
 let sqAreaInputText = document.getElementById('squareAreaInputText');
-
-
 const sqAreaBtn = document.getElementById("sqAreaBtn");
 
 const letters = /[a-zA-Z]/
 
 
-
-sqAreaBtn.addEventListener('click', () =>
+function toConfirmData(inputId)
 {
-    let lado = sqAreaInputText.value;
-    
 
- if(lado == '')
- {
-     console.log('tienes que poner un numero');
-     
- }
- else if(containsLetters(lado))
- {
-    console.log("ingresa un valor sin letras");
- }
- else
- {
-     sqAreaInputResult.innerHTML = operaciones.areaCuadrado(lado) + "cm";
- }
-})
+    let confirmed = false;
+    let value = inputId.value
+    if(containsLetters(value))
+    {
+        alert('No se permiten letras');
+        
+        
+    }
 
+    else if(value == '')
+    {
+        alert('Tienes que ingresar algo');
+        
+        
+    }
+    else
+    {
+        confirmed = true;   
+        
+    }
+
+    return confirmed
+}
 
 
 function containsLetters(str) {
     return /[a-zA-Z]/.test(str);
   }
 
-
-let operaciones = {
+  let operaciones = {
     areaCuadrado: function(lado)
     {
         return areaCuadrado = lado * lado;
@@ -78,3 +79,15 @@ let operaciones = {
         console.log(`El area del circulo es igual a: ${areaCirculo.toFixed(2)}cm`)
     }
 }
+
+  sqAreaBtn.addEventListener('click', () => {
+    if(toConfirmData(sqAreaInputText))
+    {
+        const result = operaciones.areaCuadrado(sqAreaInputText.value)
+
+        sqAreaInputResult.innerHTML = result + "cm";
+    }
+})
+
+
+
