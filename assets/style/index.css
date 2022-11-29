@@ -135,8 +135,8 @@ html
   line-height: normal;
   margin-top: 8px;
   min-height: 60px;
-  min-width: 340px;
-  max-width: 600px;
+  min-width: 310px;
+  max-width: 360px;
   outline: none;
   padding: 16px 24px;
   text-align: center;
@@ -236,7 +236,7 @@ main
 {
     background-color: white;
     height: 500px;
-    max-width: 754px;
+    max-width: 360px;
     width: 95%;
     margin: 40px 0;
     border-radius: 20px;

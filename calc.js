@@ -47,13 +47,17 @@ function containsLetters(str) {
 
     perimetroCuadrado: function(lado)
     {
-        let perimetroCuadrado = lado * 4;
-        alert(`El perimetro del cuadrado es igual a ${perimetroCuadrado}cm²`)
+       return perimetro = lado * 4;
     },
 
-    areaTriangulo: function(base, area)
+
+    diagonalCuadrado: function(lado)
     {
-        let areaTriangulo = (base * area) / 2;
+        return lado * Math.sqrt(2)
+    },
+    areaTriangulo: function(base, altura)
+    {
+        let areaTriangulo = (base * altura) / 2;
         console.log(`El area del triangulo es igual a: ${areaTriangulo}cm`);
     },
 
@@ -75,8 +79,8 @@ function containsLetters(str) {
     },
     areaCirculo: function(radio)
     {
-        let areaCirculo = Math.pow(radio, 2) * Math.PI;
-        console.log(`El area del circulo es igual a: ${areaCirculo.toFixed(2)}cm`)
+        return Math.pow(radio, 2) * Math.PI;
+        
     }
 }
 
@@ -89,5 +93,26 @@ function containsLetters(str) {
     }
 })
 
+ sqPerBtn.addEventListener('click', () => {
+   if(toConfirmData(sqPer1stPar))
+   {
+       const result = operaciones.perimetroCuadrado(sqPer1stPar.value);
+       sqPerInputResult.innerHTML = `${result} cm`
+   }
+ })
+ 
+sqDiagonalBtn.addEventListener('click', () => {
+    if(toConfirmData(sqDiagonalInputValue))
+    {
+        const result = operaciones.diagonalCuadrado(sqDiagonalInputValue.value).toFixed(2);
+        sqDiagonalInputResult.innerHTML = `${result} cm`
+    }
+})
 
-
+crclAreaBtn.addEventListener('click', () => {
+    if(toConfirmData(crclAreaInputValue))
+    {
+       const result = operaciones.areaCirculo(crclAreaInputValue.value).toFixed(2);
+       crclAreaInputResult.innerHTML = `${result} cm2`
+    }
+})
