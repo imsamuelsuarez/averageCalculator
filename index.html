@@ -6,7 +6,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./assets/style/index.css">
     <link rel="stylesheet" href="./assets/style/desktop.css">
-    <link rel="stylesheet" href="./assets/style/tablet.css">
     <link rel="stylesheet" href="./assets/style/cards.css">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -16,40 +15,38 @@
     <title>Calculadora de Promedios - Samuel Suarez</title>
 </head>
 <body>
-    <header>
-        <div class="header-info--container">
-           <div class="header-title--container">
-                <h1 class="header-container--title">Calcula tus  promedios</h1>
-
-                <h4 class="header-container--subtitle">¡Calcula figuras geometricas, promedios matematicos y más!</h2>
-           </div>
-
-
-            <div class="header-container--description">
-                <p class="header-description--title">Utilizando esta herramienta puedes calcular: </p>
-                <ul class="header-description--list">
-                    <li>Calculo de Mediana aritmetica</li>
-                    <li>Calculo de Moda aritmetica</li>
-                    <li>Calculo de Promedio aritmetico</li>
-                    <li>Calculos de Geometria</li>
-                    <li>Calculo de Descuentos</li>
-                </ul>
-
-                <p class="header-description--nametag">Proyectos creados en Javascript <span>i</span>  por <a href="#main">Samuel Suarez</a></p>
-
-                <button class="header-description--main-button main-button">Iniciar</button>
+    <section>
+        <header>
+            <div class="header-info--container">
+               <div class="header-title--container">
+                    <h1 class="header-container--title">Calcula tus  promedios</h1>
+    
+                    <h4 class="header-container--subtitle">¡Calcula figuras geometricas, promedios matematicos y más!</h2>
+               </div>
+    
+    
+                <div class="header-container--description">
+                    <p class="header-description--title">Utilizando esta herramienta puedes calcular: </p>
+                    <ul class="header-description--list">
+                        <li>Calculo de Mediana aritmetica</li>
+                        <li>Calculo de Moda aritmetica</li>
+                        <li>Calculo de Promedio aritmetico</li>
+                        <li>Calculos de Geometria</li>
+                        <li>Calculo de Descuentos</li>
+                    </ul>
+    
+                    <p class="header-description--nametag">Proyectos creados en Javascript <span>i</span>  por <a href="#main">Samuel Suarez</a></p>
+    
+                    <button class="header-description--main-button main-button">Iniciar</button>
+                </div>
             </div>
-
-
-        </div>
-
-        <div class="header-hero--container">
-            logo
-        </div>
-    </header>
-
-    <main class="main">
-        <section class="main-section--card">
+    
+            <div class="header-hero--container">
+                logo
+            </div>
+        </header>
+        <main class="main"> 
+             <section class="main-section--card">
             <div class="main-select--title-section">
                 <form action="calculos" class="form-calc">
                    <label for="calculos" class="form-calc--label">Empieza a calcular ahora</label>
@@ -189,10 +186,12 @@
                 </div>
                 <div class="card compoundInteres-card" id="compoundInteres-card" data-value="6">septima opcion</div>
                   </div>
-        </section>
+            </section>
+        </main>
+    </section>
+   
 
-    </main>
-    <script src="./index.js"></script>
+    <script type="module" src="./index.js"></script>
     <script src="./calc.js"></script>
 </body>
 </html>

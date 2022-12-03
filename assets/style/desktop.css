@@ -1,17 +1,11 @@
-
-@media(min-width: 1100px)
-{
-    header
+@media screen and (min-width: 1000px) {
+    section
     {
-        display: grid;
-        grid-template-columns: repeat(8, 1fr);
-        grid-template-rows: repeat(4, 165px)
-
+        display: flex;
+        justify-content: space-between;
     }
-
-    .header-info--container
-    {
-        grid-area: 1 / 2 / 5 / 3 ;
-        
-    }
+ header, main
+ {
+     width: 50%;
+ }   
 }

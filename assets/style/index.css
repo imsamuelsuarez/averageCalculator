@@ -23,6 +23,12 @@ html
 
 /* Header style's */
 
+header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 .header-info--container
 {
     display: grid;
@@ -38,7 +44,7 @@ html
 
 .header-hero--container
 {
-    display: none;;
+    display: none;
 }
 
 .header-title--container
@@ -170,7 +176,7 @@ html
 main
 {
     width: 100%;
-    height: auto;
+    height: 100vh;
     background-color: var(--soft-white);
     display: flex;
     justify-content: center;
@@ -179,7 +185,7 @@ main
 
 .main-section--card
 {
-    width: inherit;
+    width: 90%;
     min-height: 600px;
     height: auto;
     display: flex;
@@ -222,7 +228,7 @@ main
 
 .main-select--card-wrapper
 {
-    width: 100%;
+    width: 70%;
     min-height: 500px;
     height: auto;
     display: flex;
